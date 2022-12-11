@@ -1,8 +1,5 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-
-
-
 body,
 h1,
 h2,
@@ -37,7 +34,7 @@ body,
 }
 
 body {
-  background: linear-gradient(#BDD5EA, #FE5F55);
+  background: linear-gradient(#bdd5ea, #fe5f55);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -58,7 +55,6 @@ body {
   border-radius: 10px;
   margin: 5px;
 }
-
 
 #mainNavbar {
   background-color: #f7f7ff;
@@ -85,11 +81,11 @@ body {
 .btn:hover,
 .navbar-toggler:hover,
 .navbar-brand:hover {
-  background-color: #BDD5EA;
+  background-color: #bdd5ea;
 }
 
-.mapboxgl-marker>svg path {
-  fill: #FE5F55;
+.mapboxgl-marker > svg path {
+  fill: #fe5f55;
 }
 
 .page-content {
@@ -113,7 +109,6 @@ body {
   z-index: 0;
   top: 55px;
 }
-
 
 // POTHOLE PROFILE SCSS
 .post {

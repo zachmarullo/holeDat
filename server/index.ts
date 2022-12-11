@@ -11,9 +11,6 @@ const app = express();
 // running on port 5555 if no env available
 const PORT = process.env.PORT || 5555;
 
-
-
-
 import rootRouter from './routes/index';
 
 app.use(
@@ -40,8 +37,6 @@ app.use(express.json());
 app.use('/', express.static(path.resolve('dist')));
 app.use('/Pothole', isLoggedIn, express.static(path.resolve('dist')));
 app.use('/User', isLoggedIn, express.static(path.resolve('dist')));
-
-
 
 app.get('/logout', function (req, res, next) {
   req.logout(function (err) {
@@ -92,9 +87,6 @@ app.get(
     failureRedirect: '/Map',
   })
 );
-
-
-
 
 app.use('/api', rootRouter);
 
